@@ -1,12 +1,3 @@
-/* top grid for spacing */
-/* .navbar-grid {
-  display: grid;
-  grid-template-columns: 15% 15% 15% 10% 15% 15% 15%;
-  grid-auto-rows: auto !important;
-  align-items: center !important;
-  text-align: center !important;
-} */
-
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -20,6 +11,7 @@ nav {
   width: 100%;
   height: 10%;
   border-bottom: 1px solid #E6E6E6;
+  z-index: 999;
 }
 
 .instapic {
@@ -28,6 +20,7 @@ nav {
   height: 48px;
   position: relative;
   top:auto;
+  cursor: pointer;
 }
 
 .searcher {
@@ -38,6 +31,7 @@ nav {
   border: 1px solid #E6E6E6;
   border-radius: 5px;
   background-color: #FAFAFA;
+  cursor: text;
 }
 
 .searcher:focus {
@@ -109,20 +103,21 @@ nav {
   margin: 12px;
   float:left;
   font-size: 25px;
+  cursor: pointer;
 }
 #heart {
   margin: 12px;
   float: left;
   font-size: 25px;
+  cursor: pointer;
 
 }
 #user {
   margin: 12px;
   float: left;
   font-size: 25px;
+  cursor: pointer;
 }
-
-
 
 /* grid layout */
 .grid-container {
@@ -141,46 +136,11 @@ nav {
   background-color: rgba(0, 255, 0, 0.5);
 }
 
-/* navbar */
-/* .navbar {
-  display: grid;
-  grid-template-columns: auto;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 10%;
-  box-shadow: 0px 0px 0px 1px #E6E6E6;
-} */
-
-/* .grid-instagram {
-  width: 100px !important;
-} */
-
-/* instagram logo link */
-/* .navbar .grid-instagram { */
-  /* height: 100%; */
-  /* width: 160px; */
-  /* text-align: center; */
-  /* float: left; */
-/* } */
-
-/* search bar */
-/* .navbar .grid-search {
-  text-align: center;
-  height: 28px;
-  width: 215px; */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* float: left;
-  border-radius: 2px 2px 2px 2px #E6E6E6; */
-/* } */
-
 html {
   height: 100%;
 }
 
+/* https://stackoverflow.com/questions/8118741/css-font-helvetica-neue */
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
   Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -213,6 +173,62 @@ body {
 #lonzo-pic {
   width: 100%;
   cursor: pointer;
+}
+
+#borussia-info {
+  display: grid;
+  grid-template-columns: 7% 7% 7% 73% 7%;
+  grid-template-rows: 9%;
+  margin-left: 2%;
+}
+
+#lonzo-info {
+  display: grid;
+  grid-template-areas:
+    'icon1 icon2 icon3 grid-space icon4'
+    'liked-by liked-by liked-by liked-by liked-by'
+    'caption caption caption caption caption'
+    'load-more-comments load-more-comments load-more-comments load-more-comments load-more-comments'
+    'comment to-like comment to-like comment to-like comment to-like comment to-like'
+    'comment to-like comment to-like comment to-like comment to-like comment to-like'
+    'comment to-like comment to-like comment to-like comment to-like comment to-like'
+    'when-posted when-posted when-posted when-posted when-posted'
+    'add-comment add-comment add-comment add-comment comment-options' !important;
+  /* grid-template-columns: 7% 7% 7% 73% 7%;
+  grid-template-rows: 9%; */
+  margin-left: 2%;
+}
+
+#grid-spacer {
+  grid-area: grid-space;
+}
+
+#liked-by {
+  grid-area: liked-by;
+}
+
+#like {
+  font-size: 25px;
+  cursor: pointer;
+  grid-area: icon1;
+}
+
+#comment {
+  font-size: 25px;
+  cursor: pointer;
+  grid-area: icon2;
+}
+
+#share {
+  font-size: 25px;
+  cursor: pointer;
+  grid-area: icon3;
+}
+
+#bookmark {
+  font-size: 25px;
+  cursor: pointer;
+  grid-area: icon4;
 }
 
 .ig-post {
