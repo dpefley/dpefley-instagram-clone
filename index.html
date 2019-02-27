@@ -7,18 +7,42 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
-    <div class="navbar">
-      <div class="navbar-grid">
-
-        <img src="instagram.jpg" alt="Instagram Header Image" id="instagram-main-photo">
-        <input type="text" placeholder="Search" id="search-bar"</input>
-      </div>
-    </div>
+    <nav class="container">
+        <!-- <div class="navbar-grid"> -->
+        <!-- <div class="grid-space"></div> -->
+        <div class="grid-instagram"><img src="instagram.jpg" alt="insta-header" class="instapic"></div>
+        <!-- <div class="grid-space"></div> -->
+        <div class="grid-search"><input type="text" placeholder="&#128270; Search" class="searcher" class="fas fa-search"></input></div>
+        <!-- <div class="grid-space"></div> -->
+        <div class="grid-icons">
+          <div id="compass"><i class="far fa-compass"></i></div>
+          <div id="heart"><i class="far fa-heart"></i></div>
+          <div id="user"><i class="far fa-user"></i></div>
+        </div>
+        <!-- <div class="grid-space"></div> -->
+      <!-- </div> -->
+    </nav>
     <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_display_inline-grid -->
     <div class="grid-container">
       <div class="grid-space"></div>
       <div class="grid-content">
-        Main Content
+
+        <div class="ig-post">
+          <div><img src="borussia-title.jpg" alt="borussia title pic" id="borussia-title"></div>
+          <div><img src="borussia.jpg" alt="borussia" id="borussia-pic"></div>
+          <div id="borussia-info">
+
+          </div>
+        </div>
+
+        <div class="ig-post">
+          <div><img src="lonzo-title.jpg" alt="lonzo title pic" id="lonzo-title"></div>
+          <div><img src="lonzo.jpg" alt="lonzo" id="lonzo-pic"></div>
+          <div id="lonzo-info">
+
+          </div>
+        </div>
+
       </div>
       <div class="grid-gap"></div>
       <div class="grid-sidebar">
