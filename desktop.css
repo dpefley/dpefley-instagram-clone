@@ -133,7 +133,7 @@ nav {
 }
 
 .grid-sidebar {
-  background-color: rgba(0, 255, 0, 0.5);
+  /* background-color: rgba(0, 255, 0, 0.5); */
 }
 
 html {
@@ -180,63 +180,226 @@ body {
   grid-template-columns: 7% 7% 7% 73% 7%;
   grid-template-rows: 9%;
   margin-left: 2%;
+
 }
 
 #lonzo-info {
   display: grid;
-  grid-template-areas:
-    'icon1 icon2 icon3 grid-space icon4'
-    'liked-by liked-by liked-by liked-by liked-by'
-    'caption caption caption caption caption'
-    'load-more-comments load-more-comments load-more-comments load-more-comments load-more-comments'
-    'comment to-like comment to-like comment to-like comment to-like comment to-like'
-    'comment to-like comment to-like comment to-like comment to-like comment to-like'
-    'comment to-like comment to-like comment to-like comment to-like comment to-like'
-    'when-posted when-posted when-posted when-posted when-posted'
-    'add-comment add-comment add-comment add-comment comment-options' !important;
-  /* grid-template-columns: 7% 7% 7% 73% 7%;
-  grid-template-rows: 9%; */
+  grid-template-columns: 7% 7% 7% 73% 7%;
+  grid-template-rows: 9%;
   margin-left: 2%;
-}
-
-#grid-spacer {
-  grid-area: grid-space;
-}
-
-#liked-by {
-  grid-area: liked-by;
 }
 
 #like {
   font-size: 25px;
   cursor: pointer;
-  grid-area: icon1;
+}
+
+#like:hover {
+  color: red;
 }
 
 #comment {
   font-size: 25px;
   cursor: pointer;
-  grid-area: icon2;
 }
 
 #share {
   font-size: 25px;
   cursor: pointer;
-  grid-area: icon3;
 }
 
 #bookmark {
   font-size: 25px;
   cursor: pointer;
-  grid-area: icon4;
+}
+
+#user-small {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+#who-like {
+  margin-top: 4px;
+}
+
+.caption {
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+.load-comments {
+  margin-top: 5px;
+  padding-left: 15px;
+  color: #989898;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.add-comment {
+  display: grid;
+  grid-template-columns: 90% auto 25px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  color: #989898;
+  cursor: pointer;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 90% auto 25px;
+  margin-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+.like-the-comment:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.liked-by {
+  display: grid;
+  grid-template-columns: 30px auto;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+hr {
+  width: 90%;
+  color: #EEEEEE;
+  opacity: 0.3;
+}
+
+.when-posted {
+  margin-top: 5px;
+  padding-left: 15px;
+  color: #989898;
+  font-size: 11px !important;
+  padding-bottom: 5px;
 }
 
 .ig-post {
   display: grid;
-  grid-template-rows: 60px auto 290px;
+  grid-template-rows: 60px auto 30px 30px; /*290px*/
   grid-row-gap: 0px;
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   border-radius: 3px;
   margin-bottom: 60px;
+  font-size: 14px;
+}
+
+/* sidebar stuff */
+.whoami {
+  display: grid;
+  grid-template-columns: 55px auto;
+  grid-column-gap: 10px;
+  padding-bottom: 15px;
+}
+
+#dan {
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
+
+.name-bottom {
+  color: #989898;
+}
+
+.name-prof {
+  display: grid;
+  grid-template-rows: 4px 15px 15px;
+  font-size: 14px;
+  grid-row-gap: 5px;
+}
+
+.stories {
+  height: 225px;
+  width: 100%;
+  display: grid;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+.story-title {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 50% auto 30%;
+  padding-bottom: 10px;
+}
+
+#all-stories {
+  cursor: pointer;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #989898;
+}
+
+#watch-all {
+  cursor: pointer;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 55px auto;
+  grid-column-gap: 10px;
+  padding-bottom: 6px;
+}
+
+.name-stor {
+  display: grid;
+  grid-template-rows: 0px 15px 15px;
+  font-size: 14px;
+  grid-row-gap: 5px;
+}
+
+#jess {
+  padding-left: 10px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#kate {
+  padding-left: 10px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#kat {
+  padding-left: 10px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#yana {
+  padding-left: 10px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#tally {
+  padding-left: 10px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+#yas {
+  padding-left: 10px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
 }
